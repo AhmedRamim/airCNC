@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCFzpuAq11QlpUWuT14Iy0w8UIB7hNZXtY",
-  authDomain: "aircnc-9c027.firebaseapp.com",
-  projectId: "aircnc-9c027",
-  storageBucket: "aircnc-9c027.appspot.com",
-  messagingSenderId: "823910344731",
-  appId: "1:823910344731:web:1eaf996f29318670db30be"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase

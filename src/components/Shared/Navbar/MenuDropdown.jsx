@@ -22,7 +22,7 @@ const MenuDropdown = () => {
         >
           <AiOutlineMenu />
           <div className='hidden md:block'>
-            <img src={Avatar} alt="" width={30} className='rounded-full' height={30} />
+            <img src={user && user.photoURL ? user.photoURL : Avatar} alt="profile" title={user?.displayName ? user?.displayName : 'Profile'} width={30} className='rounded-full' height={30} />
           </div>
         </div>
       </div>
