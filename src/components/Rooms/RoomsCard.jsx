@@ -1,11 +1,12 @@
 // import HeartButton from '../Button/HeartButton'
 
+import { Link } from "react-router-dom";
 import HeartButton from "../../Buttons/HeartButton";
 
 const RoomsCard = ({room}) => {
     const {location,image,dateRange,price,category} = room;
   return (
-    <div className='col-span-1 cursor-pointer group'>
+    <Link to={`/room/${category}`} className='col-span-1 cursor-pointer group'>
       <div className='flex flex-col gap-2 w-full'>
         <div
           className='
@@ -46,7 +47,7 @@ const RoomsCard = ({room}) => {
           <div className='font-light'>{category}</div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
